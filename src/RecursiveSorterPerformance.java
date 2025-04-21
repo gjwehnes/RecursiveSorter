@@ -1,4 +1,4 @@
-//2023/12/25
+//2025/04/21
 import java.util.Random;
 
 public class RecursiveSorterPerformance {
@@ -11,17 +11,21 @@ public class RecursiveSorterPerformance {
         generator.setSeed(12345);
         
 		//2 sorts x 2 metrics x 4 data sets
-		System.out.print(String.format("%6s", ""));
+		System.out.print(String.format("%6s\t", "n"));
 		System.out.print(formatHeader("random").repeat(4));			
 		System.out.print(formatHeader("nearly").repeat(4));			
 		System.out.print(formatHeader("reverse").repeat(4));			
-		System.out.print(formatHeader("few unique").repeat(4));			
+		System.out.print(formatHeader("few_unique").repeat(4));			
+		System.out.println();
+
+		System.out.print(String.format("%6s\t", "n"));
+		System.out.print( (formatHeader("QS").repeat(2) +
+							formatHeader("MS").repeat(2)).repeat(4));
 		System.out.println();
 		
 		System.out.print(String.format("%6s\t", "n"));
-		System.out.print( (formatHeader("QS T(n)/nlogn") + formatHeader("QS S(n)/nlogn") +
-							formatHeader("MS T(n)/nlogn") + formatHeader("MS S(n)/nlogn") ).repeat(4));
-
+		System.out.print( (formatHeader("T(n)/nlogn") + formatHeader("S(n)/nlogn") +
+							formatHeader("T(n)/nlogn") + formatHeader("S(n)/nlogn") ).repeat(4));
 		System.out.println();
         		
 		for (int n = 1000; n <= 10000; n+=1000){
