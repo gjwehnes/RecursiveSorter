@@ -15,7 +15,7 @@ public class RecursiveSorterAnalysis {
         generator.setSeed(12345);  //do not change this statement
         
         			
-		System.out.print(String.format("%6s", "n"));
+		System.out.print(String.format("%12s", "n"));
 		for (int i = 0; i < 6; i++) {
 			System.out.print(String.format("%12s","random"));			
 		}
@@ -32,7 +32,7 @@ public class RecursiveSorterAnalysis {
 		System.out.println();
 		
 		
-		System.out.print(String.format("%6s", "n"));
+		System.out.print(String.format("%12s", "n"));
 		for (int i = 0; i < 4; i++) {
 			System.out.print(String.format("%12s%12s%12s", "QS-reads", "QS-writes", "QS-space"));
 			System.out.print(String.format("%12s%12s%12s", "MS-reads", "MS-writes", "MS-space"));
@@ -43,7 +43,7 @@ public class RecursiveSorterAnalysis {
 			///////////////////////////////////RANDOM
 			IntegerArray arrayToSort = null;
 						
-			System.out.print(String.format("%6d",n));
+			System.out.print(String.format("%12d",n));
 
 			arrayToSort = utility.createRandomArray(n);
 			IntegerArray.reset();
