@@ -35,7 +35,7 @@ public class RecursiveSorterPerformance {
 			}
 			IntegerArray arrayToSort = null;
 						
-			System.out.print(String.format("%6d",n));
+			System.out.print(formatHeader(String.format("%6d",n)));
 
 			///////////////////////////////////RANDOM
 			arrayToSort = utility.createRandomArray(n);
