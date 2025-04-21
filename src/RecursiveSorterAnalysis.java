@@ -1,11 +1,10 @@
-//2023/05/05
+//2025/04/21
 import java.util.Random;
 
 public class RecursiveSorterAnalysis {
 
 	public static void main(String[] args) {
 		createTable();
-//		createSummary();
 	}
 	
 	static void createTable() {
@@ -16,7 +15,7 @@ public class RecursiveSorterAnalysis {
         generator.setSeed(12345);  //do not change this statement
         
         			
-		System.out.print(String.format("%6s", ""));
+		System.out.print(String.format("%6s", "n"));
 		for (int i = 0; i < 6; i++) {
 			System.out.print(String.format("%12s","random"));			
 		}
@@ -27,7 +26,7 @@ public class RecursiveSorterAnalysis {
 			System.out.print(String.format("%12s","reverse"));			
 		}
 		for (int i = 0; i < 6; i++) {
-			System.out.print(String.format("%12s","few unique"));			
+			System.out.print(String.format("%12s","few_unique"));			
 		}
 		
 		System.out.println();
