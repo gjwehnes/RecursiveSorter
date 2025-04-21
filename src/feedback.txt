@@ -1,0 +1,7 @@
+***SPECIFIC (RecursiveSorter)
+For readability, your wrapper and your recursive function should have the same name
+Clear up the conditional statements in your recursive function so that they follow a base case / recursive case pattern
+Link your conditional statements! You either have a base or recursive case, never both.
+Reads are not counted correctly.
+Writes are not counted correctly in MergeSort	 as you are using arrays outside of the IntegerArray class. Minor point, but worth fixing.
+Challenge: can you make your MergeSort have complexity of 2n (instead of n-logn, as it is currently)? That is, instead of declaring new arrays at each step, re-use a single 'spare' array?
