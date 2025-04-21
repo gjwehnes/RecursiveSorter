@@ -31,7 +31,7 @@ public class RecursiveSorterPerformance {
 		for (int n = 1000; n <= 10000; n+=1000){
 			
 			if (n == 10000) {
-				System.out.println("------");
+				System.out.println(formatHeader("---").repeat(24));
 			}
 			IntegerArray arrayToSort = null;
 						
